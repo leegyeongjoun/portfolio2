@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portofolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="./images/logo.png" class="logo" alt="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#service">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Front-End Developer</p>
+                <h1>Hi, I'm <span>Lee</span> <br> Gyeong Joun From Korea</h1>
+            </div>
+        </div>
+        <!-- <div class="intro">
+            <h1 class="text"></h1>
+         </div> -->
+    </div>
+    <!-- ----------about-------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/user.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos reprehenderit magni dolore, sit ab omnis, optio incidunt molestiae dicta facilis illum earum placeat laudantium magnam natus laborum blanditiis pariatur eum.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span> <br>Designing Web/App interfaces </li>
+                            <li><span>Web Development</span> <br>Web Development</li>
+                            <li><span>App Development</span> <br>App Development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022.10 ~ 2023.03</span> <br> 더 휴먼아카데미 프론트엔드 과정 수료 </li>
+                            <li><span>2016.03 ~ 2021.02</span> <br>경기과학기술대학교 전자통신과 졸업</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022.10 ~ 2023.03</span> <br> 더 휴먼아카데미 프론트엔드 과정 수료 </li>
+                            <li><span>2016.03 ~ 2021.02</span> <br>경기과학기술대학교 전자통신과 졸업</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----service----- -->
+    <div id="service">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Front End</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At deserunt provident, nesciunt itaque consequuntur fugit fugiat labore aut porro amet dolores quo cum quibusdam, mollitia ipsa iure, vero architecto eius.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At deserunt provident, nesciunt itaque consequuntur fugit fugiat labore aut porro amet dolores quo cum quibusdam, mollitia ipsa iure, vero architecto eius.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At deserunt provident, nesciunt itaque consequuntur fugit fugiat labore aut porro amet dolores quo cum quibusdam, mollitia ipsa iure, vero architecto eius.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -------------------portfolio--------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./images/work-1.png" alt="work1">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>dfsafasfsalfksa;lfkas;lfkasfaslf</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/work-2.png" alt="work1">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>dfsafasfsalfksa;lfkas;lfkasfaslf</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/work-3.png" alt="work1">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>dfsafasfsalfksa;lfkas;lfkasfaslf</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- ------------contact------------ -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p>
+                        <i class="fas fa-paper-plane"></i> mirrorright@naver.com
+                    </p>
+                    <p>
+                        <i class="fas fa-phone"></i> 010-2052-4821
+                    </p>
+                    
+                    <div class="social-icons">
+                        <a href="http://facbook.com/"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="./images/cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="Email" name="email" placeholder="Your Email" required >
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright LEE.Made with <i class="fas fa-heart"></i> by
+        Easy Tutorials</p>
+    </div>
+    <h2>
+        <p>LET's 
+            <span> W</span>
+            <span>O</span>
+            <span>R</span>
+            <span>K</span>
+            <span>&nbsp;</span>
+            <span>T</span>
+            <span>O</span>
+            <span>G</span>
+            <span>E</span>
+            <span>T</span>
+            <span>H</span>
+            <span>E</span>
+            <span>R</span>
+        </p>
+    </h2>
+<script>
+
+    let tablinks = document.getElementsByClassName("tab-links");
+    let tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    let sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = '0';
+    }
+    function closemenu(){
+        sidemenu.style.right = '-200px';
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycby50uTGm5DR3YD2kUNcPizfiNVEsyakapapMmAsCjNB9_HctOv4zwGTICPG-D3mVUwwDg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const mag = document.getElementById("msg");
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+        msg.innerHTML = "Message sent successfully"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        },5000)
+        form.reset()
+    })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+  <script>
+    "use strict";
+const content = "안녕하세요. 개발자를 꿈꾸는 윤현묵입니다."
+const text = document.querySelector(".text")
+let index = 0;
+
+ function sleep(delay){ 
+     const start = new Date().getTime(); 
+     while (new Date().getTime() < start + delay); 
+    }
+
+function typing(){
+    text.textContent += content[index++];
+    if(index > content.length){
+        text.textContent = ""
+        index = 0;
+        sleep(3000);
+    }
+}
+setInterval(typing, 200)
+  </script>
+</body>
+</html>
